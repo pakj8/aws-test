@@ -20,4 +20,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Deploy to S3
-        run: aws s3 sync . s3://pooja-cicd-demo-bucket --delete --exclude ".git/*" --exclude ".github/*"
+        run: aws s3 sync . s3://aws-s3-bucket-test-3 --delete --exclude ".git/*" --exclude ".github/*"
